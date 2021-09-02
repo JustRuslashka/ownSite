@@ -1,0 +1,109 @@
+
+.animGreetings{
+    display: flex;
+    justify-content: space-around;
+    filter: blur(110px);
+    width: 100%;
+    min-height: 100vh;
+
+                                    
+
+    animation: color-animation 5s ease-in-out infinite alternate;
+    @keyframes color-animation {
+        0% {
+          background: rgb(235, 156, 156) ;
+      
+        }
+        25% {
+          background: rgb(156, 235, 229) ;
+        }
+      
+        50% {
+          background: rgb(175, 174, 243);
+        }
+        75% {
+          background: rgb(215, 174, 243);
+        }
+      
+        100% {
+          background: rgb(243, 185, 226);
+        }
+      }
+  
+    &__first-circle{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: rgb(199, 37, 177);
+     
+        animation: first-circle-animation 7s 0s ease-in-out infinite;
+
+        @keyframes first-circle-animation {
+            0% {
+                transform-origin: 380px 30% ;
+            }
+           
+            50% {
+                transform: rotateZ(360deg) scale(2);
+            }
+
+            100% {
+                transform: rotateZ(0deg) scale(1)
+                
+            }
+        }
+     
+    }
+
+    
+    &__second-circle{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: rgb(143, 26, 211);
+        margin: 400px 0px 0px 0px;
+
+       animation: second-circle-animation 7s 1s ease-in-out infinite;
+
+        @keyframes second-circle-animation {
+            0% {
+                transform-origin: 380px 30% ;
+            }
+           
+            50% {
+                transform: rotateZ(360deg) scale(2);
+            }
+
+            100% {
+                transform: rotateZ(0deg) scale(1)
+                
+            }
+        }
+    }
+
+    
+    &__third-circle{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: rgb(201, 93, 211);
+
+        animation: third-circle-animation 7s 2s ease-in-out infinite;
+    
+
+        @keyframes third-circle-animation {
+            0% {
+                transform-origin: 380px 30% ;
+            }
+           
+            50% {
+                transform: rotateZ(360deg) scale(2);
+            }
+
+            100% {
+                transform: rotateZ(0deg) scale(1)
+                
+            }
+        }
+    }
+}

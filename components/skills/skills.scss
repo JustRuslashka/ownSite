@@ -1,0 +1,21 @@
+.skills{
+    min-height: 100vh;
+    
+    &__name{
+  
+        
+        border-radius: 10px;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        align-items: center;
+        box-shadow: 0 14px 28px rgba(70, 67, 67, 0.25), 0 10px 10px rgba(90, 87, 87, 0.22);
+        opacity: 0;
+    }
+
+    &__show{
+        opacity: 1;
+        transition: opacity 2s;
+    }
+}
